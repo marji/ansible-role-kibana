@@ -1,0 +1,3 @@
+---
+kibana_repo_version: "4.1"
+elasticsearch_url: "http://localhost:9200"
