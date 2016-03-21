@@ -2,7 +2,7 @@
 port: 5601
 
 # The host to bind the server to.
-host: "0.0.0.0"
+host: "{{ kibana_server_host }}"
 
 # The Elasticsearch instance to use for all your queries.
 elasticsearch_url: "{{ elasticsearch_url }}"
@@ -62,6 +62,10 @@ verify_ssl: true
 # If you would like to send the log output to a file you can set the path below.
 # This will also turn off the STDOUT log output.
 # log_file: ./kibana.log
+
+# A value to use as a XSRF token. This token is sent back to the server on each request
+# and required if you want to execute requests from other clients (like curl).
+# xsrf_token: ""
 
 # Plugins that are included in the build, and no longer found in the plugins/ folder
 bundled_plugin_ids:
