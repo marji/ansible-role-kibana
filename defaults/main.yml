@@ -1,6 +1,4 @@
 ---
-kibana_major: "4.1"
-kibana_version: "4.1.6-linux-x64"
-kibana_root: "/opt/kibana"
+kibana_repo_version: "4.5"
 kibana_server_host: "127.0.0.1"
 elasticsearch_url: "http://localhost:9200"
