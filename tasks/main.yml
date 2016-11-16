@@ -5,7 +5,7 @@
 - name: Add Elastic Repo
   apt_repository:
     repo='deb http://packages.elastic.co/kibana/{{ kibana_repo_version }}/debian stable main'
-    state=present
+    state=present mode=644
 
 - name: Install Kibana
   apt: name=kibana update_cache=yes cache_valid_time=3600 state=present
